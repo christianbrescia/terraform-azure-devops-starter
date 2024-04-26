@@ -1,12 +1,16 @@
 #Set the terraform required version
 terraform {
   required_version = ">= 0.12.6"
+  required_providers {
+    azurerm = {
+      required_version = "~>1.44"
+    }
+  }
 }
 
 # Configure the Azure Provider
 provider "azurerm" {
-  # It is recommended to pin to a given version of the Provider
-  version = "=1.44.0"
+  features {}
 }
 
 # Data
