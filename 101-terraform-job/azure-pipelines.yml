@@ -7,8 +7,8 @@ trigger:
     include:
     - 101-terraform-job/
 
-variables:
-- group: terraform-secrets
+# variables:
+# - group: terraform-secrets
 
 stages:
 
